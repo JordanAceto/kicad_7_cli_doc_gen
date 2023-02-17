@@ -1,0 +1,6 @@
+fp-info-cache
+*-backups
+*.bak
+*.kicad_sch-bak
+*kicad_prl
+.vscode
