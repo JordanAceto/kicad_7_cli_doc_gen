@@ -1,5 +1,9 @@
 # Documentation Generator for KiCad 7 Projects
 
+## NOTE: holmesrichards maintains a [much more polished fork](https://github.com/holmesrichards/kdocgen) of this script 
+- It implements several of the improvements proposed below and adds some nice multi-board-project behavior
+- This version is left as-is for now as a basic example of how to use the KiCad 7 `kicad-cli`
+
 ## What it is:
 - With the introduction of the `kicad-cli` tool in KiCad 7 we can now easily generate many outputs from the command line
 - This is a quick and dirty python script that spits out documentation according to my own personal directory structure preference
