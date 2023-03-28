@@ -102,7 +102,7 @@ def ibom(k7_proj: KiCad7Proj) -> None:
 
 def gerbers(k7_proj: KiCad7Proj) -> None:
     layers_as_str = ",".join(k7_proj.layers)
-    temp_dir = f"{k7_proj.proj_dir}temp"
+    temp_dir = f"{k7_proj.proj_dir}temp/"
     os.system(f"mkdir {temp_dir}")
     # gerbers
     os.system(
@@ -112,7 +112,7 @@ def gerbers(k7_proj: KiCad7Proj) -> None:
         f"kicad-cli pcb export drill --units mm --generate-map --map-format gerberx2 -o {temp_dir} {k7_proj.pcb_file}")
     # zip em up
     os.system(
-        f"zip {k7_proj.proj_dir}docs/{k7_proj.proj_name}_gerbers.zip {temp_dir}/*")
+        f"zip -j {k7_proj.proj_dir}docs/{k7_proj.proj_name}_gerbers.zip {temp_dir}*")
     os.system(f"rm -r {temp_dir}")
 
 
