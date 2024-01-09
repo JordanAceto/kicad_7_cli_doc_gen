@@ -1,6 +1,6 @@
 # Documentation Generator for KiCad 7 Projects
 
-## NOTE: holmesrichards maintains a [much more polished fork](https://github.com/holmesrichards/kdocgen) of this script 
+## NOTE: holmesrichards maintains a [much more polished fork](https://gitlab.com/rsholmes/kdocgen) of this script 
 - It implements several of the improvements proposed below and adds some nice multi-board-project behavior
 - This version is left as-is for now as a basic example of how to use the KiCad 7 `kicad-cli`
 
